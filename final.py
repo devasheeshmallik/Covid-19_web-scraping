@@ -68,25 +68,5 @@ obj1=scrape()
 obj2=mydbdata(obj1)
 
 
-
-
-
-
-import mysql.connector
-from datetime import datetime as d
-import re 
-from selenium import webdriver
-
-class scrape(object):
-  def __init__(self):    
-    browser = webdriver.Chrome(executable_path='C:/.../.../chromedriver.exe')
-    browser.implicitly_wait(15)
-    browser.get("https://www.covid19india.org/")
-    self.h1text=browser.find_element_by_xpath('/html/body/div/div/div/div[3]/div[1]/div[2]/div[1]/h1').get_attribute('innerHTML')
-    browser.quit()
-    
-    
-    
-    
     
     
